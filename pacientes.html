@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creabily é uma clínica de saúde integrada especializada em Fisioterapia, Quiropraxia, Acupuntura, Psicologia, Nutrição, RPG e Pilates. Conquiste mais qualidade de vida com nossa equipe multidisciplinar.">
+    <meta name="keywords" content="fisioterapia, quiropraxia, acupuntura, psicologia, nutrição, pilates, rpg, clínica de saúde, saúde integrada, granja viana, avenida paulista, creabily">
+    <meta name="author" content="Creabily Saúde Integrada">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://creabily.com/pacientes">
+    <meta property="og:title" content="Creabily - Clínica de Cuidado Multidisciplinar e Saúde Integrada">
+    <meta property="og:description" content="Conquiste mais qualidade de vida com tratamentos personalizados em Fisioterapia, Quiropraxia, Nutrição, Psicologia e mais. Agende sua avaliação.">
+    <meta property="og:image" content="https://creabily-page.netlify.app/assets/logo1.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://creabily.com/pacientes">
+    <meta property="twitter:title" content="Creabily - Cuidado Multidisciplinar e Saúde Integrada">
+    <meta property="twitter:description" content="Conquiste mais qualidade de vida com tratamentos personalizados em Fisioterapia, Quiropraxia, Nutrição, Psicologia e mais.">
+    <meta property="twitter:image" content="https://creabily-page.netlify.app/assets/logo1.png">
+
+    <title>Creabily - Clínica de Cuidado Multidisciplinar e Saúde Integrada</title>
+    
+    <link rel="canonical" href="https://creabily.com/pacientes" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-949626738"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-949626738');
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    },
+                    colors: {
+                        brandPurple: '#592e8a',
+                        brandGreen: '#5ac2b0',
+                        bgLight: '#fafafa',
+                        bgGray: '#f3f4f6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bgLight text-gray-800 font-sans relative pb-10 overflow-x-hidden">
+
+    <!-- WhatsApp Floating Button (Funil do Quiz) -->
+    <a href="https://creabily-quiz-pacientes.netlify.app/" class="fixed bottom-6 right-6 bg-brandGreen text-white px-6 py-3 rounded-full shadow-[0_10px_20px_rgba(90,194,176,0.3)] flex items-center gap-2 hover:scale-105 transition-transform z-50 font-medium text-base border-2 border-white">
+        Agendar Avaliação
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <a href="#" class="block">
+                <img src="assets/logo1.png" alt="Creabily Logo" class="h-12 w-auto object-contain">
+            </a>
+            
+            <!-- Menu Navegação Topo -->
+            <nav class="flex flex-wrap justify-center gap-4 md:gap-6">
+                <a href="#historia" class="text-sm font-medium text-gray-600 hover:text-brandPurple transition-colors">Nossa História</a>
+                <a href="#indice-tratamentos" class="text-sm font-medium text-brandPurple hover:text-brandGreen transition-colors">Tratamentos</a>
+                <a href="#nossa-equipe" class="text-sm font-medium text-gray-600 hover:text-brandPurple transition-colors">Nossa Equipe</a>
+                <a href="#artigos-manuais" class="text-sm font-medium text-gray-600 hover:text-brandPurple transition-colors">Artigos e Manuais</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pt-12 pb-20">
+        
+        <!-- História / Sobre a Creabily -->
+        <article id="historia" class="mb-16 scroll-mt-24 text-center">
+            <div class="flex items-center justify-center gap-3 text-brandGreen font-semibold text-sm mb-4">
+                <span>Bem-vindo à Creabily</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl font-serif font-bold text-brandPurple leading-tight mb-8">
+                Desde 2010 cuidando da sua saúde
+            </h1>
+
+            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6 mx-auto">
+                <p class="text-xl">
+                    A Clínica foi fundada pela Fisioterapeuta Camila Carmona Ostan e o empresário Rafael Carmona Ostan.
+                </p>
+                <p>
+                    Acreditamos que a saúde não pode ser tratada em partes isoladas. Por isso, criamos um espaço multidisciplinar, onde diferentes especialidades se complementam para oferecer resultados reais e duradouros na sua qualidade de vida.
+                </p>
+                <p>
+                    Cada paciente é recebido como <strong>único</strong>, com planos de cuidado personalizados que respeitam sua história, suas necessidades e seus objetivos diários.
+                </p>
+            </div>
+        </article>
+
+        <!-- Call to Action 1 -->
+        <div class="bg-brandPurple text-white rounded-3xl p-8 text-center shadow-lg mb-16">
+            <h2 class="text-2xl font-bold mb-4">Qual é o seu objetivo de saúde hoje?</h2>
+            <p class="mb-6">Faça nossa avaliação rápida online e deixe nossa equipe cuidar de você.</p>
+            <a href="https://creabily-quiz-pacientes.netlify.app/" class="inline-block bg-brandGreen hover:bg-teal-400 text-white font-bold px-8 py-4 rounded-full shadow-md transition-transform hover:scale-105">
+                Iniciar Avaliação Online
+            </a>
+        </div>
+
+        <!-- Índice de Tratamentos -->
+        <section id="indice-tratamentos" class="scroll-mt-24 mb-16">
+            <h2 class="text-3xl font-extrabold text-brandPurple mb-6 text-center">Nossas Especialidades</h2>
+            <p class="text-center text-gray-600 mb-8">Clique na especialidade abaixo para saber mais detalhes sobre como podemos ajudar você:</p>
+            
+            <div class="flex flex-wrap justify-center gap-3">
+                <a href="#acupuntura" class="bg-white border border-brandPurple text-brandPurple hover:bg-brandPurple hover:text-white px-5 py-2.5 rounded-full font-medium transition-colors text-sm">Acupuntura</a>
+                <a href="#fisioterapia" class="bg-white border border-brandPurple text-brandPurple hover:bg-brandPurple hover:text-white px-5 py-2.5 rounded-full font-medium transition-colors text-sm">Fisioterapia</a>
+                <a href="#nutricao" class="bg-white border border-brandPurple text-brandPurple hover:bg-brandPurple hover:text-white px-5 py-2.5 rounded-full font-medium transition-colors text-sm">Nutrição</a>
+                <a href="#pilates" class="bg-white border border-brandPurple text-brandPurple hover:bg-brandPurple hover:text-white px-5 py-2.5 rounded-full font-medium transition-colors text-sm">Pilates</a>
+                <a href="#psicologia" class="bg-white border border-brandPurple text-brandPurple hover:bg-brandPurple hover:text-white px-5 py-2.5 rounded-full font-medium transition-colors text-sm">Psicologia</a>
+                <a href="#psicoterapia" class="bg-white border border-brandPurple text-brandPurple hover:bg-brandPurple hover:text-white px-5 py-2.5 rounded-full font-medium transition-colors text-sm">Psicoterapia</a>
+                <a href="#quiropraxia" class="bg-white border border-brandPurple text-brandPurple hover:bg-brandPurple hover:text-white px-5 py-2.5 rounded-full font-medium transition-colors text-sm">Quiropraxia</a>
+                <a href="#rpg" class="bg-white border border-brandPurple text-brandPurple hover:bg-brandPurple hover:text-white px-5 py-2.5 rounded-full font-medium transition-colors text-sm">RPG</a>
+            </div>
+        </section>
+
+        <!-- Seções Individuais dos Tratamentos -->
+        <div class="space-y-16">
+            
+            <!-- Acupuntura -->
+            <section id="acupuntura" class="scroll-mt-32 border-l-4 border-brandGreen pl-6">
+                <h3 class="text-3xl font-bold text-brandPurple mb-4">Acupuntura</h3>
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    A acupuntura é uma prática milenar reconhecida por seus benefícios no alívio de tensões, promoção do relaxamento e auxílio no bem-estar geral. Na Creabily, utilizamos a acupuntura como parte de uma abordagem integrativa, visando reequilibrar o corpo e proporcionar mais conforto nas atividades diárias, complementando de forma segura seus cuidados contínuos.
+                </p>
+                <a href="https://creabily-quiz-pacientes.netlify.app/" class="text-brandGreen font-bold hover:underline flex items-center gap-1">
+                    Agendar minha avaliação para Acupuntura <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </section>
+
+            <!-- Fisioterapia -->
+            <section id="fisioterapia" class="scroll-mt-32 border-l-4 border-brandPurple pl-6">
+                <h3 class="text-3xl font-bold text-brandPurple mb-4">Fisioterapia</h3>
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    Nossa fisioterapia (incluindo as frentes Pélvica, Traumato-Ortopédica e Integrativa) foca em entender o seu corpo como um todo. Avaliamos padrões de movimento, tensões crônicas e histórico de lesões para desenhar um programa de reabilitação que não apenas alivie o desconforto, mas ensine seu corpo a se mover com mais qualidade, força e segurança.
+                </p>
+                <a href="https://creabily-quiz-pacientes.netlify.app/" class="text-brandPurple font-bold hover:underline flex items-center gap-1">
+                    Agendar minha avaliação com um Fisioterapeuta <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </section>
+
+            <!-- Nutrição -->
+            <section id="nutricao" class="scroll-mt-32 border-l-4 border-brandGreen pl-6">
+                <h3 class="text-3xl font-bold text-brandPurple mb-4">Nutrição Funcional</h3>
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    A nutrição na Creabily vai muito além do emagrecimento. Nosso foco é a nutrição funcional, que busca entender como os alimentos afetam sua imunidade, inflamações corporais e níveis de energia. Um plano alimentar adequado é a fundação para que o corpo consiga responder de maneira mais eficiente a qualquer outro tratamento que você esteja realizando.
+                </p>
+                <a href="https://creabily-quiz-pacientes.netlify.app/" class="text-brandGreen font-bold hover:underline flex items-center gap-1">
+                    Fazer avaliação Nutricional <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </section>
+
+            <!-- Pilates -->
+            <section id="pilates" class="scroll-mt-32 border-l-4 border-brandPurple pl-6">
+                <h3 class="text-3xl font-bold text-brandPurple mb-4">Pilates</h3>
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    O nosso Estúdio de Pilates oferece um ambiente preparado para fortalecer sua musculatura estabilizadora (core), melhorar sua postura e desenvolver mais consciência corporal. Acompanhado por especialistas, o Pilates é uma excelente forma de manter a saúde preventiva e proporcionar mais vitalidade e flexibilidade para o seu dia a dia.
+                </p>
+                <a href="https://creabily-quiz-pacientes.netlify.app/" class="text-brandPurple font-bold hover:underline flex items-center gap-1">
+                    Agendar avaliação para Pilates <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </section>
+
+            <!-- Psicologia -->
+            <section id="psicologia" class="scroll-mt-32 border-l-4 border-brandGreen pl-6">
+                <h3 class="text-3xl font-bold text-brandPurple mb-4">Psicologia</h3>
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    Mente e corpo estão totalmente interligados. Muitas vezes, o estresse, a ansiedade e as tensões emocionais se manifestam fisicamente. O suporte psicológico da Creabily foca em promover autoconhecimento, inteligência emocional e um espaço seguro para que você possa falar sobre seus sentimentos, favorecendo o equilíbrio integral da sua saúde.
+                </p>
+                <a href="https://creabily-quiz-pacientes.netlify.app/" class="text-brandGreen font-bold hover:underline flex items-center gap-1">
+                    Marcar uma conversa com a Psicologia <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </section>
+
+            <!-- Psicoterapia -->
+            <section id="psicoterapia" class="scroll-mt-32 border-l-4 border-brandPurple pl-6">
+                <h3 class="text-3xl font-bold text-brandPurple mb-4">Psicoterapia</h3>
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    A psicoterapia é um processo contínuo e acolhedor de acompanhamento terapêutico. Ideal para ajudar na resolução de conflitos internos, melhora das relações interpessoais e desenvolvimento de novas perspectivas sobre os desafios diários. Um passo essencial para quem busca uma vida mais leve e centrada.
+                </p>
+                <a href="https://creabily-quiz-pacientes.netlify.app/" class="text-brandPurple font-bold hover:underline flex items-center gap-1">
+                    Saber mais sobre a Psicoterapia <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </section>
+
+            <!-- Quiropraxia -->
+            <section id="quiropraxia" class="scroll-mt-32 border-l-4 border-brandGreen pl-6">
+                <h3 class="text-3xl font-bold text-brandPurple mb-4">Quiropraxia</h3>
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    A quiropraxia atua na melhora da biomecânica do corpo, com ênfase na mobilidade articular e na saúde da coluna vertebral. Por meio de ajustes precisos, nossa equipe ajuda a reduzir desconfortos mecânicos, promover o alinhamento corporal e contribuir para que você se movimente de forma mais livre e harmoniosa.
+                </p>
+                <a href="https://creabily-quiz-pacientes.netlify.app/" class="text-brandGreen font-bold hover:underline flex items-center gap-1">
+                    Agendar minha avaliação em Quiropraxia <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </section>
+
+            <!-- Reeducação Postural Global (RPG) -->
+            <section id="rpg" class="scroll-mt-32 border-l-4 border-brandPurple pl-6">
+                <h3 class="text-3xl font-bold text-brandPurple mb-4">Reeducação Postural Global (RPG)</h3>
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    O RPG é focado em corrigir e alinhar a postura de forma global. Em vez de tratar uma parte do corpo isolada, o RPG analisa as cadeias musculares e atua no alongamento e reequilíbrio dos tecidos. Excelente para melhorar hábitos posturais adquiridos no trabalho ou na rotina e prevenir dores relacionadas à má postura.
+                </p>
+                <a href="https://creabily-quiz-pacientes.netlify.app/" class="text-brandPurple font-bold hover:underline flex items-center gap-1">
+                    Melhorar minha postura com RPG <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Sessão: Nossa Equipe (Imagens Completas) -->
+    <section id="nossa-equipe" class="max-w-6xl mx-auto px-6 mb-20 scroll-mt-24">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-brandPurple mb-4">Conheça Nossa Equipe de Especialistas</h2>
+            <p class="text-gray-600 text-lg">Profissionais qualificados e apaixonados por promover o seu bem-estar diário.</p>
+        </div>
+
+        <!-- Grid para exibir todas as fotos (originais + novas) -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-center justify-items-center">
+            
+            <div class="w-full bg-white p-2 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-shadow flex items-center justify-center h-64">
+                <img src="assets/team_1.jpg" alt="Profissional da Creabily 1" class="w-full h-full object-contain rounded-xl">
+            </div>
+            <div class="w-full bg-white p-2 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-shadow flex items-center justify-center h-64">
+                <img src="assets/team_2.jpg" alt="Profissional da Creabily 2" class="w-full h-full object-contain rounded-xl">
+            </div>
+            <div class="w-full bg-white p-2 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-shadow flex items-center justify-center h-64">
+                <img src="assets/team_3.jpg" alt="Profissional da Creabily 3" class="w-full h-full object-contain rounded-xl">
+            </div>
+            <div class="w-full bg-white p-2 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-shadow flex items-center justify-center h-64">
+                <img src="assets/team_4.jpg" alt="Profissional da Creabily 4" class="w-full h-full object-contain rounded-xl">
+            </div>
+            <div class="w-full bg-white p-2 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-shadow flex items-center justify-center h-64">
+                <img src="assets/team_5.jpg" alt="Profissional da Creabily 5" class="w-full h-full object-contain rounded-xl">
+            </div>
+            <div class="w-full bg-white p-2 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-shadow flex items-center justify-center h-64">
+                <img src="assets/equipe_2.jpg" alt="Profissional da Creabily 6" class="w-full h-full object-contain rounded-xl">
+            </div>
+            <div class="w-full bg-white p-2 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-shadow flex items-center justify-center h-64">
+                <img src="assets/equipe_3.jpg" alt="Profissional da Creabily 7" class="w-full h-full object-contain rounded-xl">
+            </div>
+            <div class="w-full bg-white p-2 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-shadow flex items-center justify-center h-64">
+                <img src="assets/equipe_4.jpg" alt="Profissional da Creabily 8" class="w-full h-full object-contain rounded-xl">
+            </div>
+            <div class="w-full bg-white p-2 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-shadow flex items-center justify-center h-64 lg:col-span-1 md:col-span-3 col-span-2">
+                <img src="assets/equipe_5.jpg" alt="Profissional da Creabily 9" class="w-full h-full object-contain rounded-xl">
+            </div>
+
+        </div>
+
+        <!-- Nova Imagem Destacada Embaixo -->
+        <div class="mt-16 bg-brandPurple rounded-3xl p-2 shadow-2xl relative overflow-hidden group">
+            <div class="absolute inset-0 bg-gradient-to-t from-brandPurple/80 to-transparent z-10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <img src="assets/equipe_1.png" alt="A Equipe Creabily Reunida" class="w-full object-cover rounded-2xl md:h-[500px]">
+            <div class="absolute bottom-0 left-0 w-full p-8 z-20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 text-center">
+                <h3 class="text-white text-2xl font-bold font-serif mb-2">Unidos pelo seu Bem-estar</h3>
+                <p class="text-purple-100">A arte de cuidar acontece quando trabalhamos juntos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdos e Artigos Inteiros na Página -->
+    <section id="artigos-manuais" class="max-w-4xl mx-auto px-6 pt-16 border-t border-gray-200 scroll-mt-24 mb-20">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-brandPurple mb-4">Artigos e Manuais Creabily</h2>
+            <p class="text-lg text-gray-600">Aprofunde-se no conhecimento sobre seu corpo. Leia nossos manuais elaborados por nossos especialistas diretamente aqui.</p>
+        </div>
+
+        <div class="space-y-16">
+            
+            <!-- Artigo 1 -->
+            <article class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100 relative">
+                <div class="absolute top-0 left-0 w-2 h-full bg-brandGreen rounded-l-3xl"></div>
+                <h3 class="text-3xl font-bold text-gray-900 mb-6">Mitos e Fatos: Por que sinto mais dores no frio?</h3>
+                <div class="prose max-w-none text-gray-700 space-y-6">
+                    <p>
+                        A chegada de frentes frias costuma trazer junto o aumento de queixas em nossos consultórios. Pessoas que já convivem com desconfortos articulares e musculares frequentemente relatam piora significativa. Mas o frio realmente causa a dor?
+                    </p>
+                    <h4 class="font-bold text-xl text-brandPurple mt-6">A Ciência por trás do frio</h4>
+                    <p>
+                        Na verdade, o clima frio atua como um gatilho. Com as baixas temperaturas, nosso corpo adota uma estratégia de proteção: os vasos sanguíneos das extremidades (mãos e pés) sofrem constrição para manter o calor nos órgãos vitais. Essa diminuição da circulação periférica torna as articulações mais rígidas.
+                    </p>
+                    <p>
+                        Além disso, nossa tendência natural no frio é a contração muscular involuntária (encolher os ombros, tensionar a cervical). Essa postura defensiva mantida por longas horas resulta em fadiga e tensão na musculatura.
+                    </p>
+                    <h4 class="font-bold text-xl text-brandPurple mt-6">Como se prevenir</h4>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Mantenha-se em movimento:</strong> Exercícios de mobilidade aquecem as articulações e estimulam o fluxo sanguíneo.</li>
+                        <li><strong>Aqueça o local:</strong> O uso de bolsas de água quente ajuda a relaxar a musculatura tensionada.</li>
+                        <li><strong>Vestuário adequado:</strong> Proteja extremidades e regiões sensíveis como o pescoço.</li>
+                    </ul>
+                    <p class="mt-8 font-medium">
+                        Se os desconfortos persistirem, a avaliação profissional é indispensável. Não normalize a dor.
+                    </p>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-100 text-center">
+                    <a href="https://creabily-quiz-pacientes.netlify.app/" class="inline-block bg-brandGreen text-white font-bold px-8 py-4 rounded-full shadow-md hover:scale-105 transition-transform">
+                        Deseja fazer uma avaliação corporal? Clique Aqui
+                    </a>
+                </div>
+            </article>
+
+            <!-- Artigo 2 -->
+            <article class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100 relative">
+                <div class="absolute top-0 left-0 w-2 h-full bg-brandPurple rounded-l-3xl"></div>
+                <h3 class="text-3xl font-bold text-gray-900 mb-6">O equilíbrio entre corpo e mente</h3>
+                <div class="prose max-w-none text-gray-700 space-y-6">
+                    <p>
+                        Por muito tempo, a ciência tentou separar o físico do mental, como se fossem duas máquinas independentes. Hoje, a abordagem integrativa comprova exatamente o oposto: seu corpo físico responde imediatamente às suas sobrecargas emocionais.
+                    </p>
+                    <h4 class="font-bold text-xl text-brandPurple mt-6">O peso do estresse</h4>
+                    <p>
+                        O estresse crônico mantém o corpo em estado de alerta. Os níveis de cortisol permanecem elevados, o que afeta diretamente o sono, a capacidade de regeneração muscular e o sistema imunológico. Pessoas submetidas a alta carga emocional frequentemente desenvolvem contraturas severas, bruxismo e dores de cabeça tensionais.
+                    </p>
+                    <h4 class="font-bold text-xl text-brandPurple mt-6">Caminhos para o Reequilíbrio</h4>
+                    <p>
+                        O primeiro passo é reconhecer os limites. Na Creabily, integramos a fisioterapia ao acompanhamento psicológico. Técnicas de relaxamento, respiração guiada (como no Pilates) e a psicoterapia são ferramentas que "ensinam" o cérebro a desativar esse estado de alerta. 
+                    </p>
+                    <p>
+                        Dica prática: Reserve 10 minutos do seu dia para afastar-se das telas. Pratique a respiração diafragmática (inspirando profundamente pelo nariz e expirando lentamente pela boca). Esse pequeno hábito reduz ativamente a tensão neural.
+                    </p>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-100 text-center">
+                    <a href="https://creabily-quiz-pacientes.netlify.app/" class="inline-block bg-brandPurple text-white font-bold px-8 py-4 rounded-full shadow-md hover:scale-105 transition-transform">
+                        Iniciar minha Triagem e Recuperar meu Equilíbrio
+                    </a>
+                </div>
+            </article>
+
+            <!-- Artigo 3 -->
+            <article class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100 relative">
+                <div class="absolute top-0 left-0 w-2 h-full bg-brandGreen rounded-l-3xl"></div>
+                <h3 class="text-3xl font-bold text-gray-900 mb-6">A Termografia na Avaliação Fisioterapêutica</h3>
+                <div class="prose max-w-none text-gray-700 space-y-6">
+                    <p>
+                        Você sabia que o calor que o seu corpo emite pode contar uma história detalhada sobre a sua saúde? A termografia clínica é uma das tecnologias mais fascinantes que utilizamos para entender a origem dos desconfortos dos nossos pacientes.
+                    </p>
+                    <h4 class="font-bold text-xl text-brandPurple mt-6">O que é a Termografia?</h4>
+                    <p>
+                        Trata-se de um exame por imagem totalmente indolor, seguro e sem qualquer radiação. Através de uma câmera sensível ao infravermelho, captamos a distribuição de calor na superfície da pele.
+                    </p>
+                    <p>
+                        Áreas inflamadas, músculos com espasmos ou sobrecarga articular tendem a emitir mais calor devido ao aumento do fluxo sanguíneo. Por outro lado, áreas com déficit de circulação ou compressões nervosas podem apresentar temperaturas mais baixas. 
+                    </p>
+                    <h4 class="font-bold text-xl text-brandPurple mt-6">Precisão que transforma tratamentos</h4>
+                    <p>
+                        Com o mapa térmico em mãos, nossos especialistas conseguem visualizar o problema antes mesmo de tocar no paciente. Isso nos permite direcionar terapias com uma precisão milimétrica. Um desconforto no joelho, por exemplo, pode estar associado a uma sobrecarga térmica no quadril que o paciente nem sabia que existia.
+                    </p>
+                    <p>
+                        A termografia é a união da alta tecnologia com o olho clínico humano, garantindo um caminho de cuidado focado exatamente onde o corpo mais precisa.
+                    </p>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-100 text-center">
+                    <a href="https://creabily-quiz-pacientes.netlify.app/" class="inline-block bg-brandGreen text-white font-bold px-8 py-4 rounded-full shadow-md hover:scale-105 transition-transform">
+                        Quero agendar uma Avaliação Tecnológica
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Banner Final Conversão -->
+    <div class="bg-brandPurple text-white rounded-3xl p-10 md:p-14 text-center shadow-2xl relative overflow-hidden mt-20 mb-16 max-w-5xl mx-auto">
+        <div class="absolute -top-20 -right-20 w-64 h-64 bg-white opacity-5 rounded-full blur-3xl"></div>
+        
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 relative z-10">Pronto para dar o próximo passo?</h2>
+        <p class="text-lg text-purple-100 mb-10 max-w-2xl mx-auto relative z-10">
+            Chegou a hora de investir no seu bem-estar diário com a equipe da Creabily.
+        </p>
+        <a href="https://creabily-quiz-pacientes.netlify.app/" class="inline-block bg-brandGreen hover:bg-teal-400 text-white font-bold text-lg px-10 py-5 rounded-full shadow-lg transition-transform hover:scale-105 relative z-10 w-full sm:w-auto">
+            Fazer o Quiz de Triagem Online
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-brandGreen mt-10">
+        <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Coluna 1 -->
+            <div>
+                <div class="h-1 w-16 bg-brandGreen mb-6"></div>
+                <h4 class="text-brandPurple font-bold text-lg leading-tight">Unidade I<br>Av. PAULISTA</h4>
+                <p class="text-gray-700 text-sm mt-4">Avenida Paulista 1159, conj. 311,312,313</p>
+                <div class="flex gap-4 mt-6">
+                    <!-- Insta -->
+                    <a href="https://www.instagram.com/creabily_avpaulista/" target="_blank" class="text-gray-800 hover:text-brandPurple">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    </a>
+                    <!-- Whats -->
+                    <a href="https://creabily-quiz-pacientes.netlify.app/" target="_blank" class="text-gray-800 hover:text-brandGreen">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a5.8 5.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Coluna 2 -->
+            <div>
+                <div class="h-1 w-16 bg-brandGreen mb-6"></div>
+                <h4 class="text-brandPurple font-bold text-lg leading-tight">Unidade II<br>GRANJA VIANA</h4>
+                <p class="text-gray-700 text-sm mt-4">R. do Golf, 47 - Granja Viana, Jandira - SP</p>
+                <div class="flex gap-4 mt-6">
+                    <!-- Insta -->
+                    <a href="https://www.instagram.com/creabily_granjaviana/" target="_blank" class="text-gray-800 hover:text-brandPurple">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    </a>
+                    <!-- Whats -->
+                    <a href="https://creabily-quiz-pacientes.netlify.app/" target="_blank" class="text-gray-800 hover:text-brandGreen">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a5.8 5.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Coluna 3 -->
+            <div>
+                <div class="h-1 w-16 bg-brandGreen mb-6"></div>
+                <h4 class="text-brandPurple font-bold text-lg leading-tight mb-4">Atendimento</h4>
+                <div class="space-y-4">
+                    <div>
+                        <p class="text-gray-900 font-medium text-sm mb-1">Segunda a Sexta:</p>
+                        <p class="text-gray-600 text-sm">7h às 19h45</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-900 font-medium text-sm mb-1">Sábado:</p>
+                        <p class="text-gray-600 text-sm">Unidade I: Fechada</p>
+                        <p class="text-gray-600 text-sm">Unidade II: 8h às 12h</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

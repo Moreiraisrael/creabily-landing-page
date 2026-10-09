@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Creabily - Mentoria para Fisioterapeutas</title>
+    <!-- Google Fonts: Outfit for a modern, futuristic look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-949626738"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-949626738');
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#6b308b', // Roxo Creabily
+                        primaryLight: '#8a42b1',
+                        cta: '#55c9bc', // Verde água/Teal
+                        ctaHover: '#44b0a4'
+                    },
+                    animation: {
+                        'blob': 'blob 7s infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Glassmorphism utilities */
+        .glass {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .glass-input {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="text-gray-800 font-sans antialiased flex flex-col min-h-screen overflow-x-hidden relative bg-gray-50">
+    
+    <!-- Futuristic Animated Background Elements -->
+    <div class="fixed inset-0 z-[-1] w-full h-full overflow-hidden">
+        <!-- Subtle grid -->
+        <div class="absolute inset-0 bg-[radial-gradient(#d1d5db_1px,transparent_1px)] [background-size:24px_24px] opacity-40"></div>
+        <!-- Glowing animated orbs -->
+        <div class="absolute top-[-10%] right-[-5%] w-[400px] h-[400px] md:w-[600px] md:h-[600px] bg-primaryLight/30 rounded-full blur-[100px] mix-blend-multiply opacity-70 animate-blob"></div>
+        <div class="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] md:w-[600px] md:h-[600px] bg-cta/30 rounded-full blur-[100px] mix-blend-multiply opacity-70 animate-blob animation-delay-2000"></div>
+        <div class="hidden lg:block absolute top-[40%] left-[20%] w-[300px] h-[300px] bg-purple-300/30 rounded-full blur-[80px] mix-blend-multiply opacity-50 animate-blob animation-delay-4000"></div>
+    </div>
+    
+    <!-- Simple Header (No links to avoid leaks) -->
+    <header class="w-full py-6 px-6 sm:px-8 flex justify-center items-center max-w-7xl mx-auto z-10 relative">
+        <div class="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
+            <img src="assets/logo.png" alt="Creabily - A Arte da Cura" class="h-12 sm:h-16 object-contain" />
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex flex-col lg:flex-row justify-center items-center lg:items-center px-4 sm:px-8 py-8 md:py-12 lg:py-16 w-full max-w-7xl mx-auto gap-12 lg:gap-20 z-10 relative">
+        
+        <!-- Text Section -->
+        <div class="space-y-6 lg:space-y-8 flex-1 text-center lg:text-left flex flex-col items-center lg:items-start w-full animate-float">
+            
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border-primary/20 text-primary text-xs font-bold uppercase tracking-wider mb-2">
+                <span class="w-2 h-2 rounded-full bg-cta animate-pulse"></span>
+                Mentoria Exclusiva
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-7xl font-extrabold tracking-tight leading-[1.1]">
+                <span class="text-gray-900">Chega de vender sessões baratas.</span><br class="hidden lg:block" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primaryLight to-cta">
+                    Atraia pacientes premium e multiplique seu lucro.
+                </span>
+            </h1>
+            
+            <h2 class="text-lg sm:text-xl text-gray-600 font-medium leading-relaxed max-w-xl mx-auto lg:mx-0">
+                Descubra o método exato que a Creabily usa para valorizar o fisioterapeuta, eliminar a dependência de planos de saúde e escalar o faturamento.
+            </h2>
+            
+            <div class="inline-flex items-start sm:items-center gap-3 mt-4 glass border-red-200 text-red-700 p-4 rounded-2xl shadow-sm font-semibold text-sm sm:text-base text-left lg:mr-auto">
+                <div class="bg-red-100 p-2 rounded-full flex-shrink-0">
+                    <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <span>Atenção: Apenas <strong>6 vagas</strong> disponíveis para a consultoria oficial.</span>
+            </div>
+        </div>
+
+        <!-- Form Section -->
+        <div class="w-full max-w-[100%] sm:max-w-lg lg:max-w-md glass rounded-[2rem] shadow-[0_20px_50px_rgb(107,48,139,0.15)] p-6 sm:p-10 relative overflow-hidden flex flex-col min-h-[450px]">
+            <div class="absolute inset-0 bg-gradient-to-b from-white/40 to-transparent rounded-[2rem] pointer-events-none"></div>
+            
+            <!-- Progress Bar -->
+            <div id="progressContainer" class="w-full bg-gray-200/50 rounded-full h-1.5 mb-6 relative z-10">
+                <div id="progressBar" class="bg-gradient-to-r from-primary to-cta h-1.5 rounded-full transition-all duration-300" style="width: 16%"></div>
+            </div>
+
+            <form id="leadForm" class="space-y-5 relative z-10 flex-1 flex flex-col justify-center">
+                
+                <!-- STEP 1: Dados Pessoais -->
+                <div class="form-step active" id="step1">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Vamos nos conhecer</h3>
+                        <p class="text-sm text-gray-500 mt-1">Preencha seus dados de contato</p>
+                    </div>
+                    <div class="space-y-4">
+                        <input type="text" id="nome" name="nome" required placeholder="Nome Completo" class="block w-full px-5 py-4 border border-gray-200/60 rounded-xl glass-input focus:bg-white focus:outline-none focus:ring-2 focus:ring-cta focus:border-transparent transition-all text-base placeholder-gray-400 text-gray-800 shadow-sm">
+                        <input type="tel" id="whatsapp" name="whatsapp" required placeholder="WhatsApp (DDD) 90000-0000" class="block w-full px-5 py-4 border border-gray-200/60 rounded-xl glass-input focus:bg-white focus:outline-none focus:ring-2 focus:ring-cta focus:border-transparent transition-all text-base placeholder-gray-400 text-gray-800 shadow-sm">
+                        <input type="email" id="email" name="email" required placeholder="Seu melhor e-mail" class="block w-full px-5 py-4 border border-gray-200/60 rounded-xl glass-input focus:bg-white focus:outline-none focus:ring-2 focus:ring-cta focus:border-transparent transition-all text-base placeholder-gray-400 text-gray-800 shadow-sm">
+                        <input type="text" id="instagram" name="instagram" placeholder="Seu @ do Instagram (opcional)" class="block w-full px-5 py-4 border border-gray-200/60 rounded-xl glass-input focus:bg-white focus:outline-none focus:ring-2 focus:ring-cta focus:border-transparent transition-all text-base placeholder-gray-400 text-gray-800 shadow-sm">
+                    </div>
+                    <button type="button" class="next-btn w-full mt-6 flex justify-center items-center py-4 px-6 rounded-xl shadow-md text-base font-bold text-white bg-gradient-to-r from-cta to-[#3bb5a7] hover:from-[#4ab5a9] hover:to-[#2fa093] transition-all transform hover:-translate-y-1">Próxima etapa</button>
+                </div>
+
+                <!-- STEP 2: Perfil Profissional -->
+                <div class="form-step hidden" id="step2">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Perfil Profissional</h3>
+                        <p class="text-sm text-gray-500 mt-1">Como você atua hoje?</p>
+                    </div>
+                    <div class="space-y-4">
+                        <input type="text" id="profissao" name="profissao" required placeholder="Qual sua profissão / área?" class="block w-full px-5 py-4 border border-gray-200/60 rounded-xl glass-input focus:bg-white focus:outline-none focus:ring-2 focus:ring-cta transition-all text-base">
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Situação profissional</label>
+                            <select id="situacao" name="situacao" required class="block w-full px-5 py-4 border border-gray-200/60 rounded-xl glass-input focus:bg-white focus:outline-none focus:ring-2 focus:ring-cta transition-all text-base">
+                                <option value="" disabled selected>Selecione...</option>
+                                <option value="Dono de Clínica">Dono(a) de Clínica</option>
+                                <option value="Sublocação">Atendo em consultório sublocado</option>
+                                <option value="Home Care">Atendimento Domiciliar</option>
+                                <option value="CLT/Empregado">CLT / Empregado</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Tempo de negócio</label>
+                            <select id="tempo" name="tempo" required class="block w-full px-5 py-4 border border-gray-200/60 rounded-xl glass-input focus:bg-white focus:outline-none focus:ring-2 focus:ring-cta transition-all text-base">
+                                <option value="" disabled selected>Selecione...</option>
+                                <option value="Menos de 1 ano">Menos de 1 ano</option>
+                                <option value="1 a 3 anos">1 a 3 anos</option>
+                                <option value="3 a 5 anos">3 a 5 anos</option>
+                                <option value="Mais de 5 anos">Mais de 5 anos</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 mt-6">
+                        <button type="button" class="prev-btn w-1/3 py-4 rounded-xl border border-gray-300 text-gray-600 font-bold hover:bg-gray-100 transition-all">Voltar</button>
+                        <button type="button" class="next-btn w-2/3 py-4 rounded-xl shadow-md text-white font-bold bg-gradient-to-r from-cta to-[#3bb5a7] hover:from-[#4ab5a9] hover:to-[#2fa093] transition-all transform hover:-translate-y-1">Próxima</button>
+                    </div>
+                </div>
+
+                <!-- STEP 3: Cenário Financeiro -->
+                <div class="form-step hidden" id="step3">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Cenário Atual</h3>
+                        <p class="text-sm text-gray-500 mt-1">Como estão os resultados?</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Momento atual</label>
+                            <select id="momento" name="momento" required class="block w-full px-5 py-4 border border-gray-200/60 rounded-xl glass-input focus:bg-white focus:outline-none focus:ring-2 focus:ring-cta transition-all text-base">
+                                <option value="" disabled selected>Selecione...</option>
+                                <option value="Preciso de pacientes">Preciso de mais pacientes</option>
+                                <option value="Tenho pacientes mas não lucro">Tenho pacientes mas não lucro o suficiente</option>
+                                <option value="Quero escalar">Já lucro, quero escalar/abrir filial</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Faturamento mensal</label>
+                            <select id="faturamento" name="faturamento" required class="block w-full px-5 py-4 border border-gray-200/60 rounded-xl glass-input focus:bg-white focus:outline-none focus:ring-2 focus:ring-cta transition-all text-base">
+                                <option value="" disabled selected>Selecione...</option>
+                                <option value="Menos de 5k">Menos de R$ 5.000</option>
+                                <option value="5k a 10k">R$ 5.000 a R$ 10.000</option>
+                                <option value="10k a 20k">R$ 10.000 a R$ 20.000</option>
+                                <option value="Acima de 20k">Acima de R$ 20.000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 mt-6">
+                        <button type="button" class="prev-btn w-1/3 py-4 rounded-xl border border-gray-300 text-gray-600 font-bold hover:bg-gray-100 transition-all">Voltar</button>
+                        <button type="button" class="next-btn w-2/3 py-4 rounded-xl shadow-md text-white font-bold bg-gradient-to-r from-cta to-[#3bb5a7] hover:from-[#4ab5a9] hover:to-[#2fa093] transition-all transform hover:-translate-y-1">Próxima</button>
+                    </div>
+                </div>
+
+                <!-- STEP 4: Dores e Metas -->
+                <div class="form-step hidden" id="step4">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Desafios</h3>
+                        <p class="text-sm text-gray-500 mt-1">O que te impede de crescer?</p>
+                    </div>
+                    <div class="space-y-4">
+                        <textarea id="dores" name="dores" rows="2" required placeholder="Principais dores hoje (Ex: cobrar barato, plano de saúde)" class="block w-full px-5 py-3 border border-gray-200/60 rounded-xl glass-input focus:bg-white focus:outline-none focus:ring-2 focus:ring-cta resize-none text-base"></textarea>
+                        <textarea id="transformacao" name="transformacao" rows="2" required placeholder="Qual a transformação que você deseja no seu negócio?" class="block w-full px-5 py-3 border border-gray-200/60 rounded-xl glass-input focus:bg-white focus:outline-none focus:ring-2 focus:ring-cta resize-none text-base"></textarea>
+                    </div>
+                    <div class="flex gap-3 mt-6">
+                        <button type="button" class="prev-btn w-1/3 py-4 rounded-xl border border-gray-300 text-gray-600 font-bold hover:bg-gray-100 transition-all">Voltar</button>
+                        <button type="button" class="next-btn w-2/3 py-4 rounded-xl shadow-md text-white font-bold bg-gradient-to-r from-cta to-[#3bb5a7] hover:from-[#4ab5a9] hover:to-[#2fa093] transition-all transform hover:-translate-y-1">Próxima</button>
+                    </div>
+                </div>
+
+                <!-- STEP 5: Visão de Futuro -->
+                <div class="form-step hidden" id="step5">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Visão de Futuro</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <textarea id="nadaMudar" name="nadaMudar" rows="2" required placeholder="Se nada mudar em 12 meses, como estará seu negócio?" class="block w-full px-5 py-3 border border-gray-200/60 rounded-xl glass-input focus:bg-white focus:outline-none focus:ring-2 focus:ring-cta resize-none text-base"></textarea>
+                        <textarea id="prosperou" name="prosperou" rows="2" required placeholder="Sua empresa terá prosperado se alcançar o que?" class="block w-full px-5 py-3 border border-gray-200/60 rounded-xl glass-input focus:bg-white focus:outline-none focus:ring-2 focus:ring-cta resize-none text-base"></textarea>
+                    </div>
+                    <div class="flex gap-3 mt-6">
+                        <button type="button" class="prev-btn w-1/3 py-4 rounded-xl border border-gray-300 text-gray-600 font-bold hover:bg-gray-100 transition-all">Voltar</button>
+                        <button type="button" class="next-btn w-2/3 py-4 rounded-xl shadow-md text-white font-bold bg-gradient-to-r from-cta to-[#3bb5a7] hover:from-[#4ab5a9] hover:to-[#2fa093] transition-all transform hover:-translate-y-1">Próxima</button>
+                    </div>
+                </div>
+
+                <!-- STEP 6: Compromisso -->
+                <div class="form-step hidden" id="step6">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Compromisso</h3>
+                        <p class="text-sm text-gray-500 mt-1">Última etapa!</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">De 0 a 10, qual sua prioridade para mudar o jogo?</label>
+                            <input type="number" id="prioridade" name="prioridade" min="0" max="10" required placeholder="Ex: 10" class="block w-full px-5 py-4 border border-gray-200/60 rounded-xl glass-input focus:bg-white focus:outline-none focus:ring-2 focus:ring-cta text-base">
+                        </div>
+                        <div class="flex items-start gap-3 mt-4">
+                            <input type="checkbox" id="consentimento" name="consentimento" required class="mt-1 w-5 h-5 text-cta rounded border-gray-300 focus:ring-cta">
+                            <label for="consentimento" class="text-sm text-gray-700 leading-tight">
+                                Sim, aceito receber contato da equipe via WhatsApp para falar sobre a mentoria.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 mt-6">
+                        <button type="button" class="prev-btn w-1/3 py-4 rounded-xl border border-gray-300 text-gray-600 font-bold hover:bg-gray-100 transition-all">Voltar</button>
+                        <button type="submit" id="submitBtn" class="w-2/3 py-4 rounded-xl shadow-md text-white font-bold bg-gradient-to-r from-cta to-[#3bb5a7] hover:from-[#4ab5a9] hover:to-[#2fa093] transition-all transform hover:-translate-y-1">
+                            Finalizar Análise
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+            
+            <!-- Success Message -->
+            <div id="successMessage" class="hidden flex-1 flex-col justify-center items-center mt-6 p-6 text-center relative z-10">
+                <div class="mx-auto flex items-center justify-center h-20 w-20 rounded-full bg-green-100 shadow-[0_0_30px_rgba(74,222,128,0.5)] mb-6">
+                    <svg class="h-10 w-10 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-extrabold text-gray-900 mb-2">Diagnóstico Recebido!</h3>
+                <p class="text-gray-600 text-lg">Obrigado pelo seu tempo. Nossa equipe vai avaliar o seu perfil e entraremos em contato pelo WhatsApp em breve.</p>
+            </div>
+        </div>
+        
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const steps = document.querySelectorAll('.form-step');
+            const nextBtns = document.querySelectorAll('.next-btn');
+            const prevBtns = document.querySelectorAll('.prev-btn');
+            const progressBar = document.getElementById('progressBar');
+            let currentStep = 0;
+
+            function updateUI() {
+                steps.forEach((step, index) => {
+                    step.classList.toggle('hidden', index !== currentStep);
+                    step.classList.toggle('active', index === currentStep);
+                });
+                
+                // Update progress bar
+                const progress = ((currentStep + 1) / steps.length) * 100;
+                progressBar.style.width = `${progress}%`;
+            }
+
+            function validateStep(index) {
+                const inputs = steps[index].querySelectorAll('input[required], select[required], textarea[required]');
+                let valid = true;
+                inputs.forEach(input => {
+                    if (!input.value.trim() || (input.type === 'checkbox' && !input.checked)) {
+                        input.classList.add('border-red-500');
+                        valid = false;
+                    } else {
+                        input.classList.remove('border-red-500');
+                    }
+                });
+                return valid;
+            }
+
+            nextBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if (validateStep(currentStep)) {
+                        if (currentStep < steps.length - 1) {
+                            currentStep++;
+                            updateUI();
+                        }
+                    } else {
+                        alert('Por favor, preencha todos os campos obrigatórios.');
+                    }
+                });
+            });
+
+            prevBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if (currentStep > 0) {
+                        currentStep--;
+                        updateUI();
+                    }
+                });
+            });
+
+            // Form Submit Logic
+            document.getElementById('leadForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                if (!validateStep(currentStep)) {
+                    alert('Por favor, preencha todos os campos obrigatórios.');
+                    return;
+                }
+                
+                const btn = document.getElementById('submitBtn');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = 'Processando...';
+                btn.disabled = true;
+
+                const formData = {
+                    nome: document.getElementById('nome').value,
+                    whatsapp: document.getElementById('whatsapp').value,
+                    email: document.getElementById('email').value,
+                    instagram: document.getElementById('instagram').value,
+                    profissao: document.getElementById('profissao').value,
+                    situacao: document.getElementById('situacao').value,
+                    tempo: document.getElementById('tempo').value,
+                    momento: document.getElementById('momento').value,
+                    faturamento: document.getElementById('faturamento').value,
+                    dores: document.getElementById('dores').value,
+                    transformacao: document.getElementById('transformacao').value,
+                    nadaMudar: document.getElementById('nadaMudar').value,
+                    prosperou: document.getElementById('prosperou').value,
+                    prioridade: document.getElementById('prioridade').value,
+                    origem: 'Landing Page B2B - Mini Diagnostico 360'
+                };
+
+                try {
+                    const webhookUrl = '/.netlify/functions/webhook';
+                    
+                    const response = await fetch(webhookUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(formData)
+                    });
+
+                    if (!response.ok) throw new Error('Falha na requisição');
+
+                    // Disparar conversão do Google Ads
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'conversion', {
+                            'send_to': 'AW-949626738/GrO6CK76uoAdEPLO6MQD',
+                            'value': 1.0,
+                            'currency': 'BRL'
+                        });
+                    }
+
+                    // Efeito suave
+                    document.getElementById('progressContainer').classList.add('hidden');
+                    document.getElementById('leadForm').style.display = 'none';
+                    
+                    const success = document.getElementById('successMessage');
+                    success.classList.remove('hidden');
+                    success.style.opacity = '0';
+                    setTimeout(() => { success.style.opacity = '1'; success.style.transition = 'opacity 0.5s ease'; }, 50);
+
+                } catch (error) {
+                    console.error(error);
+                    alert('Ocorreu um erro ao enviar seu cadastro. Tente novamente.');
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
